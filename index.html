@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <title></title>
+
+    <body>
+        <div class="container" id="container"> 
+            
+            <div id = "income" class= "options">
+                <h3>Income</h3>
+            </div>
+            <div id = "bills" class= "options">
+                <h3>Bills</h3>
+            </div>
+            <div id = "discretionary" class= "options">
+                <h3>Discretionary</h3>
+            </div>
+
+        </div>
+
+        <div id="additional" class="container2">
+            <form action="" id="add-form" onsubmit="return false">
+                <label for="income-input" id="income-label" >Income</label>
+                    <input type="text" id="income-input"></input>
+                    <button id="add-income" class = "add-form">Add</button>
+                <label for="bills-input">Bill</label>
+                    <input type="text" id="bills-input"></input> 
+                    <button id="add-bill" class = "add-form">Add</button>
+                <label for="discretionary-input">Discretionary</label>
+                    <input type="text" id="discretionary-input"></input>
+                    <button id="add-discretionary" class = "add-form">Add</button>
+                
+            </form>
+ 
+        </div>
+
+        
+        <div class="container3" id="totals">
+            <h2>Totals</h2>
+            <p>Total Income</p>
+                <div class="totals total-income" id="total-income"> </div>
+            <p>Total Bills</p>
+                <div class="totals expense" id="total-bills"> </div>
+            <p>Total Discretionary</p>
+                <div class="totals expense" id="total-discretionary"> </div>
+            <p>Balance</p>
+                <div class="totals total-balance" id="total-balance"> </div>
+                <button id="reset">Reset</button> 
+                <button id="calc-button">Calculate</button>
+                
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
